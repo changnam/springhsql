@@ -15,7 +15,7 @@ public class AppMain {
 		
 
 	      StudentDao studentDao = 
-	         (StudentDao)context.getBean("studentDao");
+	         (StudentDao)context.getBean("studentDaoSupport");
 	      
 	      System.out.println("------Records Creation--------" );
 	      studentDao.insertStudent(new Student("Zara", 11));

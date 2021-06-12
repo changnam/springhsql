@@ -32,6 +32,11 @@
 		<property name="dataSource" ref="dsHsql"></property>
 	</bean>
 
+	<bean id="studentDaoSupport"
+		class="com.honsoft.springhsql.StudentDaoImplSupport">
+		<property name="dataSource" ref="dsHsql"></property>
+	</bean>
+	
 	<jdbc:initialize-database data-source="dsHsql">
 		<jdbc:script location="classpath:hsqldb/schema-hsqldb.sql" />
 		<jdbc:script location="classpath:hsqldb/data-hsqldb.sql" />
